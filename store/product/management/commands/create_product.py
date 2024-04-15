@@ -24,3 +24,5 @@ class Command(BaseCommand):
         )
         product.save()
         self.stdout.write(self.style.SUCCESS(f'Created product: {product}'))
+
+

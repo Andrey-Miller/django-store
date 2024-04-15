@@ -10,3 +10,4 @@ class User(models.Model):
 
     def __str__(self):
         return f'User: {self.name}, email: {self.email}, registration_date: {self.registration_date}'
+

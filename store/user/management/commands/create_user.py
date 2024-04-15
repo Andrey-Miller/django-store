@@ -23,5 +23,3 @@ class Command(BaseCommand):
         )
         user.save()
         self.stdout.write(self.style.SUCCESS(f'Created user: {user}'))
-    # def handle(self, *args, **kwargs):
-    #     self.stdout.write("Hello django")

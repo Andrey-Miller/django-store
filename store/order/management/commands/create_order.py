@@ -9,12 +9,12 @@ class Command(BaseCommand):
     help = "Create a new order"
 
     def handle(self, *args, **kwargs):
-        customer = User.objects.order_by('?').first()
+        user = User.objects.order_by('?').first()
         products = Product.objects.order_by('?')[:3]
         total_amount = sum(product.price for product in products)
         order_date = timezone.now().date()
         order = Order(
-            customer=customer,
+            user=user,
             total_amount=total_amount,
             order_date=order_date,
         )
