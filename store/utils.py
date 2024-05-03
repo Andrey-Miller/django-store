@@ -5,6 +5,7 @@ from order.models import Order
 
 fake = Faker()
 
+
 def create_fake_users(num_users):
     for _ in range(num_users):
         user = User(
